@@ -27,6 +27,9 @@ npm install -g browser-sync fuck-you surge vtop wifi-password-cli
 
 # text editors
 sudo apt-get install -y atom
+apm install atom-beautify editorconfig emmet highlight-selected minimap pigments \
+  seti-icons dracula-syntax duotone-dark-sea-syntax duotone-dark-space-syntax \
+  duotone-dark-forest-syntax duotone-dark-earth-syntax duotone-dark-sky-syntax
 
 # browsers
 sudo apt-get install -y chromium-browser
