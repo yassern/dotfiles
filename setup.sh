@@ -26,6 +26,12 @@ sudo apt-get install -y ubuntu-restricted-extras libavcodec-extra rar unrar syna
 sudo apt-get install -y git tmux httpie neofetch
 
 
+# programming languages
+
+http --download https://raw.githubusercontent.com/creationix/nvm/v0.33.5/install.sh | bash
+nvm install --lts
+
+
 # text editors
 
 sudo apt-get install -y atom
