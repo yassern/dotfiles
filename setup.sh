@@ -12,7 +12,7 @@ sudo add-apt-repository -y ppa:nilarimogard/webupd8 # syspeek
 sudo add-apt-repository -y ppa:maarten-baert/simplescreenrecorder
 
 sudo sh -c 'echo "deb http://repo.vivaldi.com/stable/deb/ stable main" >> /etc/apt/sources.list'
-http --download http://repo.vivaldi.com/stable/linux_signing_key.pub | sudo apt-key add -
+http -d http://repo.vivaldi.com/stable/linux_signing_key.pub | sudo apt-key add -
 
 # update apt
 sudo apt-get update
@@ -25,8 +25,11 @@ sudo apt-get install -y ubuntu-restricted-extras libavcodec-extra rar unrar syna
 sudo apt-get install -y git tmux neofetch
 
 # programming languages
-http --download https://raw.githubusercontent.com/creationix/nvm/v0.33.5/install.sh | bash
+http -d https://raw.githubusercontent.com/creationix/nvm/v0.33.5/install.sh | bash
 nvm install --lts
+
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+http --follow https://get.rvm.io | sudo bash -s stable --ruby
 
 # install npm global packages
 npm install -g browser-sync fuck-you surge vtop wifi-password-cli
