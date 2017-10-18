@@ -14,6 +14,9 @@ sudo add-apt-repository -y ppa:maarten-baert/simplescreenrecorder
 sudo sh -c 'echo "deb http://repo.vivaldi.com/stable/deb/ stable main" >> /etc/apt/sources.list'
 http -d http://repo.vivaldi.com/stable/linux_signing_key.pub | sudo apt-key add -
 
+sudo add-apt-repository "deb https://cli-assets.heroku.com/branches/stable/apt ./"
+http --follow https://cli-assets.heroku.com/apt/release.key | sudo apt-key add -
+
 # update apt
 sudo apt-get update
 sudo apt-get upgrade
@@ -22,7 +25,7 @@ sudo apt-get upgrade
 sudo apt-get install -y ubuntu-restricted-extras libavcodec-extra rar unrar synaptic
 
 # shell
-sudo apt-get install -y git tmux neofetch
+sudo apt-get install -y git tmux neofetch heroku
 
 # programming languages
 http -d https://raw.githubusercontent.com/creationix/nvm/v0.33.5/install.sh | bash
