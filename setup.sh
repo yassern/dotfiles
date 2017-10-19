@@ -10,6 +10,9 @@ sudo add-apt-repository -y ppa:webupd8team/atom
 sudo add-apt-repository -y ppa:saiarcot895/chromium-beta
 sudo add-apt-repository -y ppa:nilarimogard/webupd8 # syspeek
 sudo add-apt-repository -y ppa:maarten-baert/simplescreenrecorder
+sudo add-apt-repository -y ppa:numix/ppa
+
+sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/Horst3180/xUbuntu_16.04/ /' >> /etc/apt/sources.list.d/arc-theme.list"
 
 sudo sh -c 'echo "deb http://repo.vivaldi.com/stable/deb/ stable main" >> /etc/apt/sources.list'
 http -d http://repo.vivaldi.com/stable/linux_signing_key.pub | sudo apt-key add -
@@ -48,6 +51,16 @@ sudo apt-get install -y chromium-browser vivaldi-stable
 
 # other apps
 sudo apt-get install -y syspeek bleachbit simplescreenrecorder
+
+# themes
+sudo apt-get install -y --allow-unauthenticated arc-theme numix-icon-theme-square
+
+# settings
+gsettings set org.gnome.desktop.privacy remember-recent-files false
+gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ launcher-minimize-window true
+gsettings set org.gnome.desktop.interface gtk-theme 'Arc-Dark'
+gsettings set org.gnome.desktop.interface icon-theme 'Numix-Square'
+dconf write /org/compiz/profiles/unity/plugins/unityshell/launcher-hide-mode 1 # auto-hide laucher
 
 # uninstall some stuff
 sudo apt-get purge -y transmission-common transmission-gtk deja-dup thunderbird simple-scan \
