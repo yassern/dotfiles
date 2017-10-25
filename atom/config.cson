@@ -1,0 +1,24 @@
+"*":
+  core:
+    closeDeletedFileTabs: true
+    disabledPackages: [
+      "exception-reporting"
+      "metrics"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "dracula-syntax"
+    ]
+  editor:
+    fontFamily: "mononoki"
+    showCursorOnSelection: false
+    softWrap: true
+  minimap:
+    absoluteMode: true
+  "status-bar": {}
+  tabs:
+    alwaysShowTabBar: false
+  "tree-view": {}
+  welcome:
+    showOnStartup: false
