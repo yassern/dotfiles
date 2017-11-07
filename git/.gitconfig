@@ -6,5 +6,6 @@
   st = status
   recommit = commit --amend -m
   unstage = reset --hard HEAD
+  
 [include]
   path = .gitlocal

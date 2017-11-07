@@ -61,7 +61,7 @@ gsettings set org.gnome.desktop.privacy remember-recent-files false
 gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ launcher-minimize-window true
 gsettings set org.gnome.desktop.interface gtk-theme 'Arc-Dark'
 gsettings set org.gnome.desktop.interface icon-theme 'Numix-Square'
-dconf write /org/compiz/profiles/unity/plugins/unityshell/launcher-hide-mode 1 # auto-hide laucher
+dconf write /org/compiz/profiles/unity/plugins/unityshell/launcher-hide-mode 1 # auto-hide launcher
 
 # uninstall some stuff
 sudo apt-get purge -y transmission-common transmission-gtk deja-dup thunderbird simple-scan \
