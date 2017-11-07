@@ -4,8 +4,8 @@
 [alias]
   br = branch
   st = status
-  recommit = commit --amend -m
+  recommit = commit --amend
   unstage = reset --hard HEAD
-  
+
 [include]
   path = .gitlocal
