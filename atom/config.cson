@@ -4,21 +4,23 @@
     disabledPackages: [
       "exception-reporting"
       "metrics"
+      "background-tips"
     ]
     telemetryConsent: "no"
     themes: [
-      "one-dark-ui"
+      "one-light-ui"
       "dracula-syntax"
+    ]
+    ignoredNames: [
+      ".git"
     ]
   editor:
     fontFamily: "mononoki"
-    showCursorOnSelection: false
+    showInvisibles: true
     softWrap: true
   minimap:
     absoluteMode: true
-  "status-bar": {}
-  tabs:
-    alwaysShowTabBar: false
-  "tree-view": {}
   welcome:
     showOnStartup: false
+  "tree-view":
+    hideIgnoredNames: true
