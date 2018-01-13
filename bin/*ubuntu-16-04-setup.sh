@@ -10,9 +10,6 @@ sudo add-apt-repository -y ppa:webupd8team/atom
 sudo add-apt-repository -y ppa:saiarcot895/chromium-beta
 sudo add-apt-repository -y ppa:nilarimogard/webupd8 # syspeek
 sudo add-apt-repository -y ppa:maarten-baert/simplescreenrecorder
-sudo add-apt-repository -y ppa:numix/ppa
-
-sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/Horst3180/xUbuntu_16.04/ /' >> /etc/apt/sources.list.d/arc-theme.list"
 
 sudo sh -c 'echo "deb http://repo.vivaldi.com/stable/deb/ stable main" >> /etc/apt/sources.list'
 http -d http://repo.vivaldi.com/stable/linux_signing_key.pub | sudo apt-key add -
@@ -25,7 +22,7 @@ sudo apt-get update
 sudo apt-get upgrade
 
 # libraries and codecs
-sudo apt-get install -y ubuntu-restricted-extras libavcodec-extra rar unrar synaptic
+sudo apt-get install -y xubuntu-restricted-extras libavcodec-extra rar unrar synaptic
 
 # programming languages
 http -d https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
@@ -52,23 +49,3 @@ sudo apt-get install -y chromium-browser vivaldi-stable
 
 # other apps
 sudo apt-get install -y syspeek bleachbit simplescreenrecorder
-
-# themes
-sudo apt-get install -y --allow-unauthenticated arc-theme numix-icon-theme-square
-
-# settings
-gsettings set org.gnome.desktop.privacy remember-recent-files false
-gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ launcher-minimize-window true
-gsettings set org.gnome.desktop.interface gtk-theme 'Arc-Dark'
-gsettings set org.gnome.desktop.interface icon-theme 'Numix-Square'
-dconf write /org/compiz/profiles/unity/plugins/unityshell/launcher-hide-mode 1 # auto-hide launcher
-
-# uninstall some stuff
-sudo apt-get purge -y transmission-common transmission-gtk deja-dup thunderbird simple-scan \
-  aisleriot gnome-sudoku gnome-mines gnome-mahjongg \
-  libreoffice-draw libreoffice-calc libreoffice-impress libreoffice-math \
-  gnome-orca onboard* vino remmina xterm xserver-xorg-input-all-hwe-16.04 \
-  unity-webapps-common webbrowser-app unity-lens-files unity-lens-music unity-lens-photos unity-lens-video \
-  unity-scope-chromiumbookmarks unity-scope-colourlovers unity-scope-devhelp unity-scope-firefoxbookmarks \
-  unity-scope-gdrive unity-scope-manpages unity-scope-openclipart unity-scope-texdoc \
-  unity-scope-tomboy unity-scope-video-remote unity-scope-virtualbox unity-scope-yelp unity-scope-zotero
