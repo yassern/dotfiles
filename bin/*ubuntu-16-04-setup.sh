@@ -17,6 +17,10 @@ http -d http://repo.vivaldi.com/stable/linux_signing_key.pub | sudo apt-key add 
 sudo add-apt-repository "deb https://cli-assets.heroku.com/branches/stable/apt ./"
 http --follow https://cli-assets.heroku.com/apt/release.key | sudo apt-key add -
 
+http https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
+sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
+
 # update apt
 sudo apt-get update
 sudo apt-get upgrade
@@ -39,7 +43,7 @@ sh -c "$(http --follow https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/
 npm install -g browser-sync fuck-you surge vtop wifi-password-cli
 
 # text editors
-sudo apt-get install -y atom
+sudo apt-get install -y atom code
 apm install atom-beautify editorconfig emmet highlight-selected minimap pigments \
   seti-icons dracula-syntax duotone-dark-sea-syntax duotone-dark-space-syntax \
   duotone-dark-forest-syntax duotone-dark-earth-syntax duotone-dark-sky-syntax
