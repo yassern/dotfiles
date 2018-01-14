@@ -47,6 +47,11 @@ sudo apt-get install -y atom code
 apm install atom-beautify editorconfig emmet highlight-selected minimap pigments \
   seti-icons dracula-syntax duotone-dark-sea-syntax duotone-dark-space-syntax \
   duotone-dark-forest-syntax duotone-dark-earth-syntax duotone-dark-sky-syntax
+code --install-extension dracula-theme.theme-dracula
+code --install-extension vector-of-bool.gitflow
+code --install-extension christian-kohler.path-intellisense
+code --install-extension joshpeng.theme-charcoal-oceanicnext
+code --install-extension waderyan.gitblame
 
 # browsers
 sudo apt-get install -y chromium-browser vivaldi-stable
