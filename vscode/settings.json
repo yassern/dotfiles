@@ -1,4 +1,5 @@
 {
     "editor.fontFamily": "'mononoki', 'Fira Code'",
-    "editor.lineHeight": 20
+    "editor.lineHeight": 20,
+    "workbench.colorTheme": "Dracula"
 }
