@@ -37,7 +37,12 @@ http --follow https://get.rvm.io | sudo bash -s stable --ruby
 
 # shell
 sudo apt-get install -y git tmux neofetch heroku
+
+#zsh
 sh -c "$(http --follow https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+( cd $ZSH_CUSTOM/plugins && git clone https://github.com/chrissicool/zsh-256color )
+http -d - https://raw.githubusercontent.com/denysdovhan/spaceship-zsh-theme/master/install.zsh | zsh
 
 # install npm global packages
 npm install -g browser-sync fuck-you surge vtop wifi-password-cli
