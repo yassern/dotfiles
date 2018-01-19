@@ -1,5 +1,8 @@
 {
-    "editor.fontFamily": "'mononoki', 'Fira Code'",
-    "editor.lineHeight": 20,
-    "workbench.colorTheme": "Dracula"
+    "workbench.colorTheme": "Dracula",
+    "editor.fontFamily": "mononoki",
+    "explorer.confirmDragAndDrop": false,
+    "editor.lineHeight": 21,
+    "git.confirmSync": false,
+    "javascript.implicitProjectConfig.checkJs": true
 }
