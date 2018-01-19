@@ -1,8 +1,12 @@
 {
-    "workbench.colorTheme": "Dracula",
     "editor.fontFamily": "mononoki",
-    "explorer.confirmDragAndDrop": false,
+    "editor.fontLigatures": true,
     "editor.lineHeight": 21,
+    "editor.renderIndentGuides": true,
+    "explorer.confirmDragAndDrop": false,
     "git.confirmSync": false,
-    "javascript.implicitProjectConfig.checkJs": true
+    "javascript.implicitProjectConfig.checkJs": true,
+    "workbench.activityBar.visible": true,
+    "workbench.colorTheme": "Dracula",
+    "workbench.sideBar.location": "right"
 }
