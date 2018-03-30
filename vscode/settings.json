@@ -1,12 +1,18 @@
 {
-    "editor.fontFamily": "mononoki",
-    "editor.fontLigatures": true,
-    "editor.lineHeight": 21,
-    "editor.renderIndentGuides": true,
-    "explorer.confirmDragAndDrop": false,
-    "git.confirmSync": false,
-    "javascript.implicitProjectConfig.checkJs": true,
-    "workbench.activityBar.visible": true,
-    "workbench.colorTheme": "Dracula",
-    "workbench.sideBar.location": "right"
+  "editor.fontFamily": "mononoki",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 13,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.lineHeight": 21,
+  "editor.minimap.enabled": false,
+  "editor.renderIndentGuides": true,
+  "explorer.confirmDragAndDrop": false,
+  "git.confirmSync": false,
+  "javascript.implicitProjectConfig.checkJs": true,
+  "window.menuBarVisibility": "toggle",
+  "workbench.activityBar.visible": false,
+  "workbench.colorTheme": "Panda Syntax",
+  "workbench.sideBar.location": "right",
+  "window.zoomLevel": 0
 }
