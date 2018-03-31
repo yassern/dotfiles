@@ -44,19 +44,8 @@ git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/z
 ( cd $ZSH_CUSTOM/plugins && git clone https://github.com/chrissicool/zsh-256color )
 http -d - https://raw.githubusercontent.com/denysdovhan/spaceship-zsh-theme/master/install.zsh | zsh
 
-# install npm global packages
-npm install -g browser-sync fuck-you surge vtop wifi-password-cli
-
 # text editors
 sudo apt-get install -y atom code
-apm install atom-beautify editorconfig emmet highlight-selected minimap pigments \
-  seti-icons dracula-syntax duotone-dark-sea-syntax duotone-dark-space-syntax \
-  duotone-dark-forest-syntax duotone-dark-earth-syntax duotone-dark-sky-syntax
-code --install-extension dracula-theme.theme-dracula
-code --install-extension vector-of-bool.gitflow
-code --install-extension christian-kohler.path-intellisense
-code --install-extension joshpeng.theme-charcoal-oceanicnext
-code --install-extension waderyan.gitblame
 
 # browsers
 sudo apt-get install -y chromium-browser vivaldi-stable
