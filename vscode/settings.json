@@ -6,13 +6,15 @@
   "editor.formatOnSave": true,
   "editor.lineHeight": 21,
   "editor.minimap.enabled": false,
+  "editor.multiCursorModifier": "ctrlCmd",
   "editor.renderIndentGuides": true,
+  "editor.wordWrap": "on",
   "explorer.confirmDragAndDrop": false,
   "git.confirmSync": false,
   "javascript.implicitProjectConfig.checkJs": true,
   "window.menuBarVisibility": "toggle",
+  "window.zoomLevel": 0,
   "workbench.activityBar.visible": false,
   "workbench.colorTheme": "Panda Syntax",
-  "workbench.sideBar.location": "right",
-  "window.zoomLevel": 0
+  "workbench.sideBar.location": "right"
 }
