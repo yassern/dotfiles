@@ -9,5 +9,14 @@
     "key": "ctrl+down",
     "command": "editor.action.moveLinesDownAction",
     "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+alt+t",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "ctrl+;",
+    "command": "editor.action.addCommentLine",
+    "when": "editorTextFocus && !editorReadonly"
   }
 ]
