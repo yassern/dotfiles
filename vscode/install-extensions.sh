@@ -1,14 +1,15 @@
 # Utils
-code --install-extension christian-kohler.path-intellisense
-code --install-extension esbenp.prettier-vscode
-code --install-extension mikestead.dotenv
-code --install-extension pnp.polacode
-code --install-extension vector-of-bool.gitflow
-code --install-extension waderyan.gitblame
+code-insiders --install-extension christian-kohler.path-intellisense
+code-insiders --install-extension esbenp.prettier-vscode
+code-insiders --install-extension mikestead.dotenv
+code-insiders --install-extension pnp.polacode
+code-insiders --install-extension vector-of-bool.gitflow
+code-insiders --install-extension waderyan.gitblame
+code-insiders --install-extension eg2.tslint
 
 # Theming
-code --install-extension dracula-theme.theme-dracula
-code --install-extension josef.rouge-theme
-code --install-extension tinkertrain.theme-panda
-code --install-extension wart.ariake-dark
-code --install-extension Yummygum.city-lights-theme
+code-insiders --install-extension dracula-theme.theme-dracula
+code-insiders --install-extension josef.rouge-theme
+code-insiders --install-extension tinkertrain.theme-panda
+code-insiders --install-extension wart.ariake-dark
+code-insiders --install-extension Yummygum.city-lights-themes
