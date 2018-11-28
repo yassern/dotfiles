@@ -1,0 +1,44 @@
+# Disable the sound effects on boot
+sudo nvram SystemAudioVolume=" "
+
+# Use Dark theme
+defaults write ~/Library/Preferences/.GlobalPreferences AppleInterfaceStyle Dark
+
+# Disable the “Are you sure you want to open this application?" dialog
+defaults write com.apple.LaunchServices LSQuarantine -bool false
+
+# Check for software updates daily, not just once per week
+defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
+
+# Enable tap to click
+defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
+
+# Enable two-tap to right click
+defaults write com.apple.AppleMultitouchTrackpad TrackpadRightClick -bool true
+
+# Automatically hide and show the Dock
+defaults write com.apple.dock autohide -bool true
+
+# Don't automatically rearrange Spaces based on most recent use on Dock
+defaults write com.apple.dock mru-spaces -bool false
+
+# Don't animate opening applications from the Dock
+defaults write com.apple.dock launchanim -bool false
+
+# Show indicator lights for open applications in the Dock
+defaults write com.apple.dock show-process-indicators -bool true
+
+# Minimize windows into their application's icon
+defaults write com.apple.dock minimize-to-application -bool true
+
+# Wipe all (default) app icons from the Dock
+defaults write com.apple.dock persistent-apps -array
+
+# Set the icon size of Dock items to 40 pixels
+defaults write com.apple.dock tilesize -int 40
+
+# Remove the auto-hiding Dock delay
+defaults write com.apple.dock autohide-delay -float 0
+
+# Remove the animation when hiding/showing the Dock
+defaults write com.apple.dock autohide-time-modifier -float 0
